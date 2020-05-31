@@ -1,0 +1,42 @@
+.card {
+  display: flex;
+  background: #171715;
+  border-radius: 4px;
+  max-width: 612px;
+  padding: 18px;
+  word-wrap: break-word;
+  
+
+
+}
+.card-img {
+  max-width: 112px;
+  max-height: 212px;
+  margin-right: 30px;
+}
+
+.card-info h1,
+h2,
+p {
+  font-weight: 500;
+  font-family: "Fredoka One", cursive;
+}
+
+.card-info__title {
+  color: rgb(255, 192, 2);
+  font-size: 20px;
+}
+
+.card-info__data {
+  color: #bbb8b8;
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+.card-info__resume {
+    color: #fff;
+    margin-top: 24px;
+    font-size: 12px;
+
+
+}
