@@ -18,7 +18,13 @@ function Main() {
           <option>Value 2</option>
         </select>
       </div>
-      <Card />
+      <Card 
+        title="interestelar"
+        data="November 2014"
+        resume="Lorem ipsur"
+        />
+   
+
     </div>
   );
 }
