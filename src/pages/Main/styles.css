@@ -35,25 +35,31 @@
 .container-input {
     padding: 8px 12px;
     outline: 0;
-    min-width: 312px;
+    width: 160px;
     font-family: 'Fredoka One', cursive;
     font-size: 0.9em;
-
 }
 
 
-.container-input::placeholder{
+input::placeholder{
     font-family: 'Fredoka One', cursive;
     color: rgb(180, 173, 173);
 
 }
 
-select {
+button {
     padding: 8px 12px;
     outline: 0;
-    min-width: 312px;
+    margin-left: 5px;
+    height: 37px;
     font-family: 'Fredoka One', cursive;
-    font-size: 0.9em;
-    margin-top: 5px;
+    font-size: 1em;
+    background:  rgb(255, 192, 2);
+    border: 1px solid rgb(66, 62, 62);
+}
 
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
