@@ -12,6 +12,9 @@ function Main() {
 
   const apiurl = "https://api.themoviedb.org/3/search/movie?api_key=172d2bcd975eca6acc08c0a239f0dc85&language=en-US";
 
+  const baseImg = "https://image.tmdb.org/t/p/w500";
+
+
   const handleInput = e => {
     const s = e.target.value;
 
@@ -46,11 +49,14 @@ function Main() {
           onKeyPress={search}
         />
       </div>
-      <Card
-        title="interestelar"
-        data="November 2014"
-        resume="A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado na produção gráfica para preencher os espaços de texto em publicações para testar e ajustar aspectos visuais antes de utilizar conteúdo real. "
-      />
+      {state.results.map(result => (
+        <Card 
+          imgURL={baseImg + result.poster_path}
+          title={result.title}
+          data={result.release_date}
+          resume={result.overview}
+        />
+      ))}
     </div>
   );
 }

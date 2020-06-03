@@ -11,6 +11,7 @@ function Card({imgURL,title,data,resume}){
                 <p className="card-info__resume">{resume}</p>
             </div>
         </div>
+        
     );
 }
 
