@@ -1,6 +1,2 @@
-src/*
-public/*
-build/static/css/*.map
-build/static/js/*.map
+
 /node_modules
-/public
